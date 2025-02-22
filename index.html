@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the GDP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home-page" style="background-image: url('assets/C.jpg');">
+    <div class="content">
+        <!-- Game Title -->
+        <h1 class="game-title">SP_Evaluation</h1>
+        <!-- Start Button to go to Terms and Conditions -->
+        <button class="proceed-btn" onclick="startMusicAndGoToTerms()">Start</button>
+        <div class="support-btn" onclick="openSupportPopup()">Support</div>
+    </div>
+
+    <!-- Audio will be added here, but it won’t play until the Start button is clicked -->
+    <audio id="background-music" loop>
+        <source src="assets/H.mp3" type="audio/mp3">
+    </audio>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    transition: background-color 0.5s ease;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+}
+
+.game-title {
+    font-size: 60px;
+    color: #FFD700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.proceed-btn, .start-btn, .support-btn {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.proceed-btn:hover, .start-btn:hover, .support-btn:hover {
+    background-color: #00BFFF; /* Same hover color throughout */
+    transform: scale(1.1);
+}
+
+/* Popup */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    z-index: 1000;
+    text-align: center;
+}
+
+.answer {
+    display: block;
+    margin: 20px;
+    padding: 20px 40px;
+    background-color: #00BFFF;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 8px;
+    width: 80%;
+    text-align: center;
+}
+
+.answer:hover {
+    background-color: #008CBA;
+}
+
+/* Video Player */
+.video-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Terms and Conditions */
+.terms-content {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    width: 60%;
+    text-align: center;
+}
+
+.terms-content ul {
+    text-align: left;
+    list-style-type: square;
+    margin: 20px;
+    font-size: 18px;
+}
+
+button {
+    font-size: 18px;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #00BFFF;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #008CBA;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Begin Evaluation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="start-page" style="background-image: url('assets/C.jpg');">
+    <div class="content">
+        <!-- Start Button, will disappear after clicking -->
+        <button id="start-btn" class="start-btn" onclick="startGame()">Start</button>
+    </div>
+
+    <!-- Popup Question -->
+    <div class="popup" id="popup" style="display: none;">
+        <p id="question">Are You GEH?</p>
+        <!-- Answer buttons will be larger now -->
+        <button class="answer" onclick="checkAnswer(true)">Absolutely</button>
+        <button class="answer" onclick="checkAnswer(false)">Absolutely Not</button>
+    </div>
+
+    <!-- Video Player (Initially hidden) -->
+    <div class="video-container" id="video-container" style="display: none;">
+        <video id="game-video" controls autoplay>
+            <source src="assets/FBI.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Background music for this page -->
+    <audio id="background-music-2" loop>
+        <source src="assets/GEH.mp3" type="audio/mp3">
+    </audio>
+</body>
+<script src="script.js"></script>
+</html>
